@@ -1,14 +1,15 @@
-%define rel	0.3
+%define rel	0.1
 
 Summary:	HostAP utils
 Summary(es):	Herramientas HostAP
 Summary(pl):	Narzedzia HostAP
 Name:		hostap-utils
-Version:	0.1.0
+Version:	0.1.2
 Release:	%{rel}
 License:	GPL
 Group:		Applications/System
 Source0:	http://hostap.epitest.fi/releases/%{name}-%{version}.tar.gz
+# Source0-md5:	added14d8db8aedb42d6e229b941be3d
 URL:		http://hostap.epitest.fi/
 BuildRequires:	%{kgcc_package}
 BuildRequires:	rpmbuild(macros) >= 1.118
