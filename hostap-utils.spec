@@ -10,7 +10,7 @@ Source0:	http://hostap.epitest.fi/releases/%{name}-%{version}.tar.gz
 # Source0-md5:	added14d8db8aedb42d6e229b941be3d
 URL:		http://hostap.epitest.fi/
 Requires:	kernel-net-hostap >= 0.1.2
-Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Tools for HostAP and WLAN.
