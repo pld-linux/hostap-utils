@@ -1,4 +1,4 @@
-%define rel	0.1
+%define rel	1
 
 Summary:	HostAP utils
 Summary(es):	Herramientas HostAP
@@ -14,7 +14,7 @@ URL:		http://hostap.epitest.fi/
 BuildRequires:	%{kgcc_package}
 BuildRequires:	rpmbuild(macros) >= 1.118
 BuildRequires:	kernel-headers
-Requires:	kernel-net-hostap
+Requires:	kernel-net-hostap >= 0.1.2
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
