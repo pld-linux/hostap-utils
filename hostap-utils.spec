@@ -2,12 +2,12 @@ Summary:	HostAP utils
 Summary(es):	Herramientas HostAP
 Summary(pl):	Narzêdzia dla HostAP
 Name:		hostap-utils
-Version:	0.2.4
+Version:	0.3.0
 Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	http://hostap.epitest.fi/releases/%{name}-%{version}.tar.gz
-# Source0-md5:	774a892131b2e51599d39aab7722c7d9
+# Source0-md5:	3a1c5a3041d82f4f3732a559266355c6
 URL:		http://hostap.epitest.fi/
 Requires:	kernel-net-hostap >= 0.1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
