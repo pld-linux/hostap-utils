@@ -1,19 +1,14 @@
-%define rel	1
-
 Summary:	HostAP utils
 Summary(es):	Herramientas HostAP
-Summary(pl):	Narzedzia HostAP
+Summary(pl):	Narzêdzia dla HostAP
 Name:		hostap-utils
 Version:	0.1.2
-Release:	%{rel}
+Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	http://hostap.epitest.fi/releases/%{name}-%{version}.tar.gz
 # Source0-md5:	added14d8db8aedb42d6e229b941be3d
 URL:		http://hostap.epitest.fi/
-BuildRequires:	%{kgcc_package}
-BuildRequires:	rpmbuild(macros) >= 1.118
-BuildRequires:	kernel-headers
 Requires:	kernel-net-hostap >= 0.1.2
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -24,26 +19,22 @@ Tools for HostAP and WLAN.
 Unas herramientas para HostAP y WLAN.
 
 %description -l pl
-Narzedzia dla HostAP i sieci bezprzewodowych.
+Narzêdzia dla HostAP i sieci bezprzewodowych.
 
 %prep
 %setup -q
 
 %build
 %{__make}
+# TODO: optflags
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT/sbin
-#hostap utils
+
 install hostap_{crypt_conf,diag,io_debug,rid} $RPM_BUILD_ROOT/sbin
 install prism2_{param,srec} $RPM_BUILD_ROOT/sbin
 install split_combined_hex $RPM_BUILD_ROOT/sbin
-
-%post
-
-%preun
 
 %clean
 rm -rf $RPM_BUILD_ROOT
