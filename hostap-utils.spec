@@ -4,7 +4,7 @@ Summary(pl):	Narzêdzia dla HostAP
 Name:		hostap-utils
 Version:	0.4.7
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		Applications/System
 Source0:	http://hostap.epitest.fi/releases/%{name}-%{version}.tar.gz
 # Source0-md5:	afe041581b8f01666e353bec20917c85
