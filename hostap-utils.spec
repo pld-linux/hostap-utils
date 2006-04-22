@@ -2,12 +2,12 @@ Summary:	HostAP utils
 Summary(es):	Herramientas HostAP
 Summary(pl):	Narzêdzia dla HostAP
 Name:		hostap-utils
-Version:	0.3.7
+Version:	0.4.7
 Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	http://hostap.epitest.fi/releases/%{name}-%{version}.tar.gz
-# Source0-md5:	529a31e987924116b8c7409dbf5794f2
+# Source0-md5:	afe041581b8f01666e353bec20917c85
 URL:		http://hostap.epitest.fi/
 Requires:	kernel-net-hostap >= 0.1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -25,8 +25,10 @@ Narzêdzia dla HostAP i sieci bezprzewodowych.
 %setup -q
 
 %build
-%{__make}
-# TODO: optflags
+%{__make} \
+	CC="%{__cc}" \
+        CFLAGS="%{rpmcflags}" \
+        LDFLAGS="%{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -41,6 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc ChangeLog README
 %attr(755,root,root) /sbin/hostap_*
 %attr(755,root,root) /sbin/prism2_*
 %attr(755,root,root) /sbin/split_combined_hex
