@@ -1,6 +1,6 @@
 Summary:	HostAP utils
-Summary(es):	Herramientas HostAP
-Summary(pl):	Narzêdzia dla HostAP
+Summary(es.UTF-8):   Herramientas HostAP
+Summary(pl.UTF-8):   NarzÄ™dzia dla HostAP
 Name:		hostap-utils
 Version:	0.4.7
 Release:	1
@@ -15,11 +15,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Tools for HostAP and WLAN.
 
-%description -l es
+%description -l es.UTF-8
 Unas herramientas para HostAP y WLAN.
 
-%description -l pl
-Narzêdzia dla HostAP i sieci bezprzewodowych.
+%description -l pl.UTF-8
+NarzÄ™dzia dla HostAP i sieci bezprzewodowych.
 
 %prep
 %setup -q
