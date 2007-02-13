@@ -1,6 +1,6 @@
 Summary:	HostAP utils
-Summary(es.UTF-8):   Herramientas HostAP
-Summary(pl.UTF-8):   Narzędzia dla HostAP
+Summary(es.UTF-8):	Herramientas HostAP
+Summary(pl.UTF-8):	Narzędzia dla HostAP
 Name:		hostap-utils
 Version:	0.4.7
 Release:	1
