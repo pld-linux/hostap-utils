@@ -3,7 +3,7 @@ Summary(es.UTF-8):	Herramientas HostAP
 Summary(pl.UTF-8):	Narzędzia dla HostAP
 Name:		hostap-utils
 Version:	0.4.7
-Release:	2
+Release:	3
 License:	GPL v2
 Group:		Applications/System
 Source0:	http://hostap.epitest.fi/releases/%{name}-%{version}.tar.gz
