@@ -3,13 +3,12 @@ Summary(es.UTF-8):	Herramientas HostAP
 Summary(pl.UTF-8):	Narzędzia dla HostAP
 Name:		hostap-utils
 Version:	0.4.7
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/System
 Source0:	http://hostap.epitest.fi/releases/%{name}-%{version}.tar.gz
 # Source0-md5:	afe041581b8f01666e353bec20917c85
 URL:		http://hostap.epitest.fi/
-Requires:	kernel-net-hostap >= 0.1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -27,8 +26,8 @@ Narzędzia dla HostAP i sieci bezprzewodowych.
 %build
 %{__make} \
 	CC="%{__cc}" \
-        CFLAGS="%{rpmcflags}" \
-        LDFLAGS="%{rpmldflags}"
+	CFLAGS="%{rpmcflags}" \
+	LDFLAGS="%{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
